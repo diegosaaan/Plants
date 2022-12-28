@@ -1,6 +1,208 @@
-body {
-    font-family: 'Inter', sans-serif;
-    /* font-family: 'Inika', serif; */
+/* RESET STYLE */
+
+* {
+    box-sizing: border-box;
 }
 
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    width: 1440px;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inika', serif; */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0px 109px;
+}
+
+.heading {
+    font-family: 'Inika', sans-serif;
+    font-size: 40px;
+    line-height: 52.1px;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* RESET STYLE */
+
+
+/* SECTION PLANTS */
+
+.header__container {
+    background-color: #EDF2EC;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 134px;
+    padding: 40px 0px;
+    font-family: 'Inika', sans-serif;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.header__container {
+    padding: 0px 110px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    margin-top: -11px;
+    margin-right: 0px;
+}
+
+.header__logo__text {
+    margin-bottom: 1px;
+    line-height: 21px;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__item:not(:last-child) {
+    margin-right: 47px;
+}
+
+.header__link {
+    position: relative;
+    color: #010201;
+    transition: 0.7s ease-in-out;
+    scroll-behavior: smooth
+}
+
+.header__link:hover {
+    color: #4f0db9;
+    transition: 0.7s ease-in-out;
+}
+
+.header__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0px;
+    height: 2px; 
+    background-color: black; 
+    transition:  0.5s; 
+}
+
+.header__link:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; 
+    width: 100%;
+    background-color: rgb(61, 50, 214); 
+    transition:  0.5s;  
+}
+
+.header__link--home {
+    font-weight: 700;
+    color: #E06733;
+}
+
+
+/* INTRO */
+
+.plants__intro__container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 55px;
+    background-color: #EDF2EC;
+}
+
+.plants__intro__right-side {
+    margin-top: 44px;
+}
+
+.plants__intro__item--first {
+    margin-bottom: 44px;
+    max-width: 549px;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #717171;
+}
+
+.plants__intro__word {
+    color:  #499A18;
+}
+
+.plants__intro__item--second {
+    margin-bottom: 53px;
+    max-width: 526px;
+    font-size: 20px;
+    line-height: 35px;
+    color:#636060;
+}
+
+.plants__intro__link {
+    padding: 11px 26px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.plants__intro__link:hover {
+    color: #fff;
+    background-color: #E06733;
+    transition: 0.3s ease-in-out;
+}
+
+/* INTRO */
+
+/* SECTION PLANTS */
+
+/* SECTION ABOUTS US */
 
