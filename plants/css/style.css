@@ -49,6 +49,10 @@ p {
     padding: 0px 109px;
 }
 
+h1,h2 {
+    margin: 0;
+}
+
 .heading {
     font-family: 'Inika', sans-serif;
     font-size: 40px;
@@ -210,11 +214,11 @@ img {
 .abouts-us__container {
     display: flex;
     justify-content: space-between;
-    padding: 93px 109px 94px 109px;
+    padding: 93px 109px 86px 109px;
 }
 
 .about-us__left-side {
-    margin-top: 35px;
+    margin-top: 68px;
 }
 
 .about-us__heading {
@@ -234,9 +238,112 @@ img {
     max-width: 605px;
 }
 
-.bout-us__right-side {
-    margin-bottom: -30px;
+/* SECTION ABOUT US */
+
+/* SECTION SERVICE */
+
+.service__container {
+    background-color: #EDF2EC;
 }
+
+.service__header {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.service__heading {
+    margin-top: 40px;
+    margin-right: 142px;
+    max-width: 306px;
+    color:  #499A18;
+}
+
+.service__buttons {
+    margin-top: 68px;
+}
+
+.service__button {
+    padding: 11px 40px;
+    border: 1px solid  #E06733;
+    border-radius: 5px;
+    font-family: 'Inika', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733 ;
+}
+
+.service__button--lawn {
+    padding: 11px 54px;
+}
+
+.service__button:not(:last-child) {
+    margin-right: 34px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 55px;
+}
+
+.cards__background {
+    display: block;
+    width: 330px;
+    height: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards__background--first {
+    background-image: url(../assets/png/service__first.png);
+}
+
+.cards__background--second {
+    background-image: url(../assets/png/service__second.png);
+}
+
+.cards__background--third {
+    background-image: url(../assets/png/service__third.png);
+}
+
+.cards__background--fourth {
+    background-image: url(../assets/png/service__fourth.png);
+}
+
+.cards__background--fifth {
+    background-image: url(../assets/png/service__fifth.png);
+}
+
+.cards__background--sixth {
+    background-image: url(../assets/png/service__sixth.png);
+}
+
+
+.cards_descriprion {
+    background-color: #EDF2EC;
+    border: 1px solid #E3E1D5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.cards__heading {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #E06733;
+}
+
+.cards__text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #717171;
+}
+
 
 
 
