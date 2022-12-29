@@ -96,7 +96,8 @@ img {
 }
 
 .header__logo__text {
-    margin-bottom: 1px;
+    font-size: 16px;
+    line-height: 21px;
     line-height: 21px;
 }
 .header__list {
@@ -178,17 +179,18 @@ img {
 }
 
 .plants__intro__item--second {
-    margin-bottom: 53px;
+    margin-bottom: 48px;
     max-width: 526px;
     font-size: 20px;
     line-height: 35px;
     color:#636060;
 }
 
-.plants__intro__link {
-    padding: 11px 26px;
+.plants__intro__button {
+    padding: 10px 26px;
     border: 2px solid #E06733;
     border-radius: 10px;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 20px;
     transition: 0.3s ease-in-out;
@@ -205,4 +207,6 @@ img {
 /* SECTION PLANTS */
 
 /* SECTION ABOUTS US */
+
+
 
