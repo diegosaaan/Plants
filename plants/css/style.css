@@ -243,6 +243,7 @@ img {
 /* SECTION SERVICE */
 
 .service__container {
+    padding-bottom: 121px;
     background-color: #EDF2EC;
 }
 
