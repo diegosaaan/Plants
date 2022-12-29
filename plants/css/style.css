@@ -156,8 +156,7 @@ img {
 .plants__intro__container {
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-top: 55px;
+    padding: 55px 109px 47px 100px;
     background-color: #EDF2EC;
 }
 
@@ -207,6 +206,37 @@ img {
 /* SECTION PLANTS */
 
 /* SECTION ABOUTS US */
+
+.abouts-us__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 93px 109px 94px 109px;
+}
+
+.about-us__left-side {
+    margin-top: 35px;
+}
+
+.about-us__heading {
+    margin-bottom: 38px;
+    max-width: 463px;
+}
+
+.about-us__heading--green {
+    color:  #499A18;
+}
+
+.about-us__heading--orange {
+    color: #E06733;
+}
+
+.about-us__description {
+    max-width: 605px;
+}
+
+.bout-us__right-side {
+    margin-bottom: -30px;
+}
 
 
 
