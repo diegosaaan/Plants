@@ -196,7 +196,7 @@ img {
     transition: 0.3s ease-in-out;
 }
 
-.plants__intro__link:hover {
+.plants__intro__button:hover {
     color: #fff;
     background-color: #E06733;
     transition: 0.3s ease-in-out;
