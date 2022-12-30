@@ -279,6 +279,15 @@ img {
     font-size: 20px;
     line-height: 26px;
     color: #E06733 ;
+    transition: 0.3s ease-in;
+}
+
+.service__button:hover,
+.service__button:focus,
+.service__button:active {
+    color: #FFF;
+    background-color: #E06733;
+    transition: 0.3s ease-in;
 }
 
 .service__button--lawn {
@@ -402,6 +411,15 @@ img {
     line-height: 26px;
     font-weight: 700;
     color: #E06733;
+    transition: 0.3s ease-in;
+}
+
+.prices__button:hover,
+.prices__button:focus,
+.prices__button:active {
+    color: #FFF;
+    background-color: #E06733;
+    transition: 0.3s ease-in;
 }
 
 .prices__background {
