@@ -4,4 +4,4 @@
 
 Напоминаю, что копирование кода карается отчислением.
 
-Деплой проекта: https://diegokitty.github.io/Plants/
+Деплой проекта: https://diegokitty.github.io/Plants/plants/
