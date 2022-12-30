@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+a,
+button,
+input,
+label {
+    -webkit-tap-highlight-color: transparent;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -50,7 +57,7 @@ p {
 .container {
     margin: 0 auto;
     padding: 0px 109px;
-    width: 1440px;
+    max-width: 1440px;
 }
 
 h1,h2 {
