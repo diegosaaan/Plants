@@ -26,11 +26,6 @@ body {
     line-height: 30px;
 }
 
-a,
-button {
-    -webkit-tap-highlight-color: transparent;
-}
-
 a {
     color: #000;
     text-decoration: none;
@@ -572,7 +567,6 @@ img {
 .contacts__container {
     display: flex;
     justify-content: space-between;
-    padding-bottom: -15px;
 }
 
 .contacts__left-side {
