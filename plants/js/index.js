@@ -3,4 +3,4 @@ console.log(" Самооценка - 100 баллов\n\nВёрстка вали
 localStorage.setItem("greeted", true);
 
 if (localStorage.getItem("greeted") !== true)
-  alert("Работа была выполнена в публичном репозитории, так как мне недоступен приватный репозиторий (политика GitHub)\nПожалуйста, оценивайте работу в соответсвии с критериями оценивания:\nhttps://github.com/rolling-scopes-school/tasks/blob/master/tasks/travel/travel-part1.md")
+  alert("Работа была выполнена в публичном репозитории, так как мне недоступен приватный репозиторий (политика GitHub)\n\nПожалуйста, оценивайте работу в соответсвии с критериями оценивания:\n\nhttps://github.com/rolling-scopes-school/tasks/blob/master/tasks/plants/plants-part2.md")

@@ -369,7 +369,7 @@ img {
 
 .prices__container {
     padding-top: 38px;
-    padding-bottom: 115px;
+    padding-bottom: 110px;
     display: flex;
     justify-content: space-between;
 }
@@ -386,7 +386,7 @@ img {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    max-height: 405px;
+    min-height: 405px;
 }
 
 .prices__text {
@@ -567,6 +567,7 @@ img {
 .contacts__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contacts__left-side {
@@ -592,9 +593,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 450px;
     margin-top: 148px;
     padding: 5px 35px 5px 20px;
-    width: 450px;
+    width: 100%;
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 1px;
