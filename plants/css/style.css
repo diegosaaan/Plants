@@ -160,6 +160,15 @@ img {
     color: #E06733;
 }
 
+.burger {
+    display: none;
+}
+
+.menu-close {
+    display: none;
+}
+
+
 
 /* INTRO */
 

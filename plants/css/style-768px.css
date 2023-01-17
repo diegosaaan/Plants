@@ -47,6 +47,8 @@
     }
     
     .plants__intro__item--second {
+        position: relative;
+        left: 5px;
         margin-bottom: 35px;
         max-width: 341px;
         font-size: 16px;
@@ -101,7 +103,7 @@
     /* SECTION SERVICE */
 
 .service__container {
-    padding-bottom: 68px;
+    padding-bottom: 70px;
 }
 
 .service__header {
@@ -266,8 +268,8 @@
     flex-direction: column-reverse;
 }
 
-.plants__intro__left-side {
-    display: none;
+.plants__intro__item--second {
+    left: 0px;
 }
 
 /* SECTION PLANTS */
