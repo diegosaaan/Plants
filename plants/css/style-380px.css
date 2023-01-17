@@ -51,7 +51,7 @@
         right: -100%;
         padding: 15px 30px 15px 30px;
         width: 65vw;
-        height: 100vw;
+        height: 100vh;
         background-color: #fff;
         -webkit-transition: right .3s ease-in-out;
         -o-transition: right .3s ease-in-out;
@@ -148,7 +148,7 @@
         right: 0;
         padding: 15px 30px 15px 30px;
         width: 65vw;
-        height: 100vw;
+        height: 100vh;
         border: 1px solid #3db432;
         -webkit-transition: right .3s ease-in-out;
         -o-transition: right .3s ease-in-out;
