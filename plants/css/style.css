@@ -302,7 +302,7 @@ img {
 }
 
 .service__button--lawn {
-    padding: 11px 54px;
+    padding: 11px 52px;
 }
 
 .service__button:not(:last-child) {
@@ -598,14 +598,18 @@ img {
     color: #499A18;
 }
 
+.contacts__right-side {
+    position: relative;
+}
+
 .select {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 450px;
+    width: 450px;
     margin-top: 148px;
     padding: 5px 35px 5px 20px;
-    width: 100%;
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 1px;
@@ -614,25 +618,122 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease-in;
     cursor: pointer;
+    z-index: 10;
 }
 
-.select::after {
-    content: '';
-    display: inline-block;
+.contacts__city-choice {
+    display: none;
+    width: 450px;
+    padding: 27px 50px 31px 26px;
+    background-color: #DCE9D9;
+}
+
+.contacts__city-choice.contacts__city-choice--active {
+    position: absolute;
+    display: block;
+    z-index: 10;
+}
+
+.contacts__item {
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #499A18;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.contacts__item:hover {
+    border-bottom: 1px solid #717171;
+    color: #717171;
+    transition: 0.3s ease-in-out;
+}
+
+.select__icon {
+    display: block;
     width: 16px;
     height: 16px;
     background-image: url(../assets/svg/select__arrow.svg);
-    transition: 0.3s ease-in;
+    transition: 0.1s ease-in;
 }
 
-.select:hover {
+.select--shadow {
+    box-shadow: none;
+}
+
+.select--size {
+    font-size: 16px;
+}
+
+.select--color {
+    background-color: #C1E698;
+}
+
+.select:hover,
+.select:focus,
+.select:active {
+    box-shadow: none;
     background-color: #C1E698;
     transition: 0.3s ease-in;
 }
 
-.select:active::after {
+.select__icon--clicked {
     transform: rotate(180deg);
-    transition: 0.3s ease-in;
+    transition: 0.1s ease-in;
+}
+
+.information {
+    position: absolute;
+    top: 245px;
+    display: none;
+    width: 450px;
+    padding: 17px 3px 32px 30px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #000;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: #EDF2EC;
+    z-index: 1;
+}
+
+.information--active {
+    display: flex;
+}
+
+.information__right-list {
+    margin-left: 10px;
+    color: #717171;
+}
+
+.information__right-item:nth-child(3) {
+    line-height: 20px;
+}
+
+.information__left-item:nth-child(3) {
+    line-height: 20px;
+}
+
+.information__right-btn {
+    margin-top: 24px;
+}
+
+.information__right-link {
+    padding: 7px 45px;
+    font-size: 10px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #717171;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.information__right-link:hover {
+    background-color: #E06733;
+    color: #fff;
+    transition: 0.3s ease-in-out;
 }
 
 /* SECTION CONTATS */

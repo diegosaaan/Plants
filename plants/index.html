@@ -12,6 +12,7 @@
     <link rel="icon" href="./assets/icon/favicon__icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-1260px.css">
     <link rel="stylesheet" href="./css/style-768px.css">
     <link rel="stylesheet" href="./css/style-380px.css">
     <title>Plants</title>
@@ -112,7 +113,7 @@
             </div>
             <div class="about-us__right-side">
                 <picture>
-                    <source srcset="./assets/380px-files/png/about-us__flower--380px.png" media="(max-width: 380px">
+                    <source srcset="./assets/380px-files/png/about-us__flower--380px.png" media="(max-width: 440px">
                     <source srcset="./assets/768px-files/png/about-us__flower--768px.png" media="(max-width: 768px">
                     <img class="about-us__flower" src="./assets/png/about-us__flower.png" alt="flower">
                 </picture>
@@ -304,6 +305,38 @@
                     <div class="select__static">
                         City
                     </div>
+                    <span class="select__icon"></span>
+                </div>
+                <div class="contacts__city-choice">
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            Canandaigua, NY
+                        </li>
+                        <li class="contacts__item">
+                            New York City
+                        </li>
+                        <li class="contacts__item">
+                            Yonkers, NY
+                        </li>
+                        <li class="contacts__item">
+                            Sherrill, NY
+                        </li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <ul class="information__left-list">
+                        <li class="information__left-item">City:</li>
+                        <li class="information__left-item">Phone:</li>
+                        <li class="information__left-item">Office adress:</li>
+                    </ul>
+                    <ul class="information__right-list">
+                        <li class="information__right-item information__right-item-city"></li>
+                        <li class="information__right-item information__right-tel"></li>
+                        <li class="information__right-item information__right-item-adress"></li>
+                        <li class="information__right-item information__right-btn">
+                            <a href="" class="information__right-link" onclick="callNumber()">Call us</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

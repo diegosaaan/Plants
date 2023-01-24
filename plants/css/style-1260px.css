@@ -1,0 +1,128 @@
+/* MEDIA 1260px */
+
+@media (max-width:1260px) {
+
+    /* SECTION PLANTS */
+
+    .plants__intro__left-side {
+        margin-right: 15px;
+    }
+
+    /* SECTION PLANTS */
+
+    .abouts-us__container {
+        padding-top: 40px;
+    }
+
+    .about-us__left-side {
+        margin-right: 15px;
+    }
+
+    /* SECTION CONTACTS */
+
+    .contacts__container {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    
+    .contacts__left-side {
+        position: relative;
+        left: 10px;
+        margin-top: 250px;
+        max-width: 200px;
+        max-height: 250px;
+    }
+    
+    .contacts__center-side {
+        order: 1;
+        margin-top: 40px;
+    }
+    
+    .contacts__heading {
+        left: 0px;
+    }
+    
+    .select {
+        margin-top: 61px;
+        width: 450px;
+    }
+
+    .information {
+        top: 130px;
+    }
+
+    /* SECTION CONTACTS */
+
+    /* SECTION SERVICE */
+
+    .service__button {
+        margin-bottom: 6px;
+    }
+
+    /* SECTION SERVICE */
+
+}
+
+@media (max-width: 1000px) {
+
+     /* SECTION PLANTS */
+
+     .plants__intro__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .plants__intro__icon {
+        max-width: 310px;
+        max-height: 260px;
+    }
+
+    .plants__intro__item--third {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* SECTION PLANTS */
+    
+    /* SECTION ABOUS US */
+
+    .abouts-us__container {
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+   }
+   
+   
+   .about-us__left-side {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 0px;
+       margin-bottom: 70px;
+   }
+   
+   .about-us__heading {
+       display: inline-block;
+       text-align: center;
+   }
+   
+   .about-us__right-side {
+       display: flex;
+       justify-content: center;
+   }
+
+ /* SECTION ABOUS US */
+
+}
+
+/* MEDIA 1260px */
+
+/* MEDIA 880px */
+
+@media (max-width:880px) {
+    
+    .cards {
+        justify-content: center;
+    }
+}
