@@ -293,8 +293,13 @@ img {
     transition: 0.3s ease-in;
 }
 
+.btn--active {
+    color: #FFF;
+    background-color: #E06733;
+    transition: 0.3s ease-in;
+}
+
 .service__button:hover,
-.service__button:focus,
 .service__button:active {
     color: #FFF;
     background-color: #E06733;
@@ -324,6 +329,17 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.cards__item {
+    filter: blur(0px);
+    transition: 0.3s linear;
+}
+
+.service__item--active {
+    filter: blur(2px);
+    transition: 0.3s linear;
+}
+
 
 .cards__background--first {
     background-image: url(../assets/png/service__first.png);
@@ -451,75 +467,56 @@ img {
     border-radius: 20px;
 }
 
+.accordion__item {
+    max-height: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.accordion__item--active {
+    max-height: 100%;
+}
+
 .accordion__item:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.accordion__input {
-    display: none;
-}
-
-.accordion__label {
+.accordion__title {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-width: 248px;
     padding: 15px 40px 15px 40px;
-    border-radius: 20px;
     font-size: 20px;
     line-height: 20px;
     font-weight: 700;
     background-color: #EDF2EC;
-    z-index: 20;
+    z-index: 10;
     cursor: pointer;
-    transition: background-color 1s cubic-bezier(.22,1.06,.83,.67), border-radius 0.5s cubic-bezier(.42,0,1,1);
+    transition: 0.3s ease-in-out;
 }
 
-.accordion__label:hover {
+.accordion__title:hover,
+.accordion__title:active {
     background-color: #D6E7D2;
+    transition: 0.3s ease-in-out;
 }
 
-.accordion__input:checked + .accordion__label {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background: #D6E7D2;
-    transition: 0s;
-}
-
-.accordion__label::after {
-    content: '';
+.accordion__icon {
     display: inline-block;
     width: 16px;
     height: 16px;
     background-image: url(../assets/svg/accordion__arrow.svg);
-    transition: 0.2s ease-in;
-}
-
-.accordion__input:checked + .accordion__label::after {
-    background-image: url(../assets/svg/accordion__arrow.svg);
-    transform: rotate(180deg);
-    transition:  0.2s ease-in;
+    transition: 0.3s ease-in-out;
 }
 
 .accordion__description {
-    position: relative;
     padding: 0px 40px 0px 41px;
     max-width: 248px;
-    max-height: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    max-height: 100%;
     background: #D6E7D2;
     overflow: hidden;
-    z-index: 30;
-    transition: 0.3s cubic-bezier(.07,.7,0,1.05);
-}
-
-.accordion__input:checked ~ .accordion__description {
-    display: block;
-    position: relative;
-    max-height: 1000px;
-    transition: 1s ease-in;
 }
 
 .accordion__text {
@@ -622,16 +619,36 @@ img {
 }
 
 .contacts__city-choice {
-    display: none;
+    position: relative;
     width: 450px;
-    padding: 27px 50px 31px 26px;
+    max-height: 0;
+    padding: 0px 50px 0px 26px;
+    background-color: #DCE9D9;
+    overflow: hidden;
+    transition: 0.3s linear;
+    z-index: 10;
+}
+
+.contacts__city-choice::before {
+    content: '';
+    display: block;
+    height: 17px;
+    background-color: #DCE9D9;
+}
+
+.contacts__city-choice::after {
+    content: '';
+    display: block;
+    height: 31px;
     background-color: #DCE9D9;
 }
 
 .contacts__city-choice.contacts__city-choice--active {
     position: absolute;
+    max-height: 300px;
     display: block;
     z-index: 10;
+    transition: 0.3s linear;
 }
 
 .contacts__item {
@@ -655,7 +672,7 @@ img {
     width: 16px;
     height: 16px;
     background-image: url(../assets/svg/select__arrow.svg);
-    transition: 0.1s ease-in;
+    transition: 0.3s linear;
 }
 
 .select--shadow {
@@ -680,7 +697,7 @@ img {
 
 .select__icon--clicked {
     transform: rotate(180deg);
-    transition: 0.1s ease-in;
+    transition: 0.3s linear;
 }
 
 .information {

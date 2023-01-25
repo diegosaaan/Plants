@@ -31,6 +31,92 @@ menuCloseLinks.forEach(link => link.addEventListener("click", () => {
   menuBurger.classList.remove('burger-active');
 }))
 
+// 
+
+// SERVICE 
+
+const itemGardens = document.querySelectorAll(".cards__item-gardens");
+const itemLawn = document.querySelector(".cards__item-lawn");
+const itemPlanting = document.querySelectorAll(".cards__item-planting");
+const allItem = document.querySelectorAll(".cards__item");
+
+const btnGardens = document.querySelector(".service__button--gardens");
+const btnLawn = document.querySelector(".service__button--lawn");
+const btnPlanting = document.querySelector(".service__button--planting");
+const allBtn = document.querySelectorAll(".service__button");
+
+allBtn.forEach(btn => {
+  let btnArray = Array.from(allBtn);
+  btn.addEventListener("click", (e) => {
+
+    // Запрет на нажатие 3 кнопок одновременно
+
+    let btnArrayLength = Array.from(allBtn);
+    btnArrayLength = btnArrayLength.filter(btn => btn.classList.contains("btn--active")).length;
+
+    if (btnArrayLength > 1 && btn.classList.contains("btn--active") == false) alert("А нельзя");
+    else { 
+      btn.classList.toggle("btn--active") 
+    };
+
+    // Если ни одна кнопка не нажата - убрать блюр
+
+    if (btnArray.every(btn => btn.classList.contains("btn--active") == false)) {
+      allItem.forEach(item => {
+        item.classList.remove("service__item--active")
+      })};
+
+      // Добавлять блюр, если кнопка нажата
+
+      if(btnGardens.classList.contains("btn--active") ) {
+        itemLawn.classList.add("service__item--active")
+  
+        itemPlanting.forEach(item => {
+          item.classList.add("service__item--active")
+        });
+      };
+  
+      if(btnLawn.classList.contains("btn--active")) {
+  
+        itemPlanting.forEach(item => {
+          item.classList.add("service__item--active")
+        });
+  
+        itemGardens.forEach(item => {
+          item.classList.add("service__item--active")
+        });
+      };
+  
+      if(btnPlanting.classList.contains("btn--active") ) {
+        itemLawn.classList.add("service__item--active")
+  
+        itemGardens.forEach(item => {
+          item.classList.add("service__item--active")
+        });
+      };
+
+      // Убирать блюр, если кнопка нажата
+      
+      if (btnGardens.classList.contains("btn--active")) {
+        itemGardens.forEach(item => {
+          item.classList.remove("service__item--active")
+        })
+      };
+    
+      if (btnLawn.classList.contains("btn--active")) {
+        itemLawn.classList.remove("service__item--active")
+      };
+    
+      if (btnPlanting.classList.contains("btn--active")) {
+        itemPlanting.forEach(item => {
+          item.classList.remove("service__item--active")
+        })
+      };
+  });
+});
+
+// SERVICE
+
 // Contacts
 
 const select = document.querySelector(".select");
@@ -45,8 +131,6 @@ const informationAdress = document.querySelector(".information__right-item-adres
 const informationTelLink = document.querySelector(".information__right-link");
 const contactsPhoto = document.querySelector(".contacts__photo");
 const screenWidth = window.screen.width;
-
-console.log(screenWidth)
 
 if (screenWidth > 380) contactsPhoto.style = "visibility:visible";
 
