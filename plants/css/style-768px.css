@@ -465,9 +465,8 @@
 }
 
 .information__right-btn {
-    position: relative;
-    right: 0px;
-    left: 0px;
+    display: flex;
+    align-items: center;
 }
 
 /* SECTION CONTATS */
