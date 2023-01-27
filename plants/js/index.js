@@ -94,8 +94,9 @@ allBtn.forEach(btn => {
     let btnArrayLength = Array.from(allBtn);
     btnArrayLength = btnArrayLength.filter(btn => btn.classList.contains("btn--active")).length;
 
-    if (btnArrayLength > 1 && btn.classList.contains("btn--active") == false) alert("А нельзя");
-    else { 
+    if (btnArrayLength > 1 && btn.classList.contains("btn--active") == false) {
+      alert("Вы не можете нажать одновременно 3 кнопки.");
+    } else { 
       btn.classList.toggle("btn--active") 
     };
 
