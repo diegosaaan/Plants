@@ -114,6 +114,21 @@
 
  /* SECTION ABOUS US */
 
+ /* SECTION PRICE */
+
+ .prices__right-side {
+    margin-top: 63px;
+}
+
+.prices__text {
+    margin-bottom: 28px;
+    max-width: 296px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+ /* SECTION PRICE */
+
 }
 
 /* MEDIA 1260px */

@@ -49,6 +49,10 @@
         line-height: 25px;
     }
 
+    .plants__intro__item--third {
+        justify-content: start;
+    }
+
     /* INTRO */
 
     /* SECTION ABOUTS US */
@@ -90,7 +94,7 @@
 .service__header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .service__heading {
@@ -166,17 +170,6 @@
     line-height: 43px;
 }
 
-.prices__right-side {
-    margin-top: 63px;
-}
-
-.prices__text {
-    margin-bottom: 28px;
-    max-width: 296px;
-    font-size: 25px;
-    line-height: 35px;
-}
-
 .accordion {
     margin-top: 56px;
 }
@@ -225,6 +218,10 @@
 
     .plants__intro__container {
         flex-direction: column;
+    }
+
+    .plants__intro__item--third {
+        justify-content: center;
     }
     
     .header {
@@ -401,6 +398,32 @@
     }
 
     /* SECTION SERVICE */
+
+    /* SECTION PRICE */
+
+    .prices__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .prices__left-side {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .prices__right-side {
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .prices__text {
+        text-align: center;
+    }
+
+    /* SECTION PRICE */
 }
 
 /* MEDIA 660px */
@@ -447,11 +470,6 @@
 }
 
 /* SECTION CONTATS */
-
-.prices__container {
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 
 /* SECTION PRICES */
 
@@ -551,6 +569,7 @@
     
     .about-us__left-side {
         margin-top: 0px;
+        margin-right: 0;
         margin-bottom: 3px;
     }
     
@@ -585,6 +604,15 @@
     }
 
     /* SECTION SERVICE */
+
+    /* SECTION PRICE */
+
+    .accordion {
+        margin-top: 35px;
+        padding: 29px 22px 29px 22px;
+    }
+
+    /* SECTION PRICE */
 
 }
 
