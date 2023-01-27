@@ -716,7 +716,7 @@ img {
 .information {
     position: absolute;
     top: 245px;
-    display: none;
+    visibility: hidden;
     width: 450px;
     padding: 17px 3px 32px 30px;
     font-size: 16px;
@@ -725,11 +725,16 @@ img {
     border: 1px solid #000000;
     border-radius: 20px;
     background-color: #EDF2EC;
+    opacity: 0;
     z-index: 1;
+    transition: 0.7s ease-in-out;
 }
 
 .information--active {
     display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.7s ease-in-out;
 }
 
 .information__right-list {
