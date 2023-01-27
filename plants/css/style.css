@@ -214,12 +214,6 @@ img {
     transition: 0.3s ease-in-out;
 }
 
-.plants__intro__button:hover {
-    color: #fff;
-    background-color: #E06733;
-    transition: 0.3s ease-in-out;
-}
-
 /* INTRO */
 
 /* SECTION PLANTS */
@@ -294,13 +288,6 @@ img {
 }
 
 .btn--active {
-    color: #FFF;
-    background-color: #E06733;
-    transition: 0.3s ease-in;
-}
-
-.service__button:hover,
-.service__button:active {
     color: #FFF;
     background-color: #E06733;
     transition: 0.3s ease-in;
@@ -439,14 +426,6 @@ img {
     line-height: 26px;
     font-weight: 700;
     color: #E06733;
-    transition: 0.3s ease-in;
-}
-
-.prices__button:hover,
-.prices__button:focus,
-.prices__button:active {
-    color: #FFF;
-    background-color: #E06733;
     transition: 0.3s ease-in;
 }
 
@@ -843,5 +822,30 @@ img {
 
 .footer__right-link--unknown {
     background-image: url(../assets/svg/footer__unknown.svg);
+}
+
+/* MEDIA FOR HOVER */
+
+@media (min-width: 769px) {
+    
+    .plants__intro__button:hover {
+        color: #fff;
+        background-color: #E06733;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .prices__button:hover,
+    .prices__button:focus,
+    .prices__button:active {
+        color: #FFF;
+        background-color: #E06733;
+        transition: 0.3s ease-in;
+}
+    .service__button:hover,
+    .service__button:active {
+        color: #FFF;
+        background-color: #E06733;
+        transition: 0.3s ease-in;
+}
 }
 

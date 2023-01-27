@@ -1,24 +1,23 @@
 /* MEDIA 768px */
 
 @media (max-width:768px) {
-
     .container {
         padding: 0px 50px;
         max-width: 768px;
     }
-
+    
     /* HEADER */
-
+    
     .header {
         flex-wrap: wrap;
         padding-top: 35px;
         max-height: 120px;
     }
-
+    
     /* HEADER */
-
+    
     /* INTRO */
-
+    
     .plants__intro__container {
         justify-content: space-between;
         flex-direction: row-reverse;
@@ -48,15 +47,15 @@
         font-size: 16px;
         line-height: 25px;
     }
-
+    
     .plants__intro__item--third {
         justify-content: start;
     }
-
+    
     /* INTRO */
-
+    
     /* SECTION ABOUTS US */
-
+    
     .abouts-us__container {
         display: flex;
         justify-content: space-between;
@@ -77,135 +76,136 @@
         font-size: 20px;
         line-height: 30px;
     }
-
+    
     .about-us__flower {
         max-width: 250px;
         max-height: 258px;
     }
-
+    
     /* SECTION ABOUTS US */
-
+    
     /* SECTION SERVICE */
+    
+    
+    .service__container {
+        padding-bottom: 70px;
+    }
+    
+    .service__header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+    
+    .service__heading {
+        margin-top: 60px;
+        margin-right: 0px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    
+    .service__buttons {
+        margin-top: 43px;
+    }
+    
+    .cards {
+        justify-content: space-between;
+        row-gap: 38px;
+    }
+    
+    .cards__background {
+        width: 280px;
+    }
+    
+    .cards__background--first {
+        background-image: url(../assets/768px-files/png/service__first--768px.png);
+    }
+    
+    .cards__background--second {
+        background-image: url(../assets/768px-files/png/service__second--768px.png);
+    }
+    
+    .cards__background--third {
+        background-image: url(../assets/768px-files/png/service__third--768px.png);
+    }
+    
+    .cards__background--fourth {
+        background-image: url(../assets/768px-files/png/service__fourth--768px.png);
+    }
+    
+    .cards__background--fifth {
+        background-image: url(../assets/768px-files/png/service__fifth--768px.png);
+    }
+    
+    .cards__background--sixth {
+        background-image: url(../assets/768px-files/png/service__sixth--768px.png);
+    }
+    
+    .cards__heading {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .cards__text {
+        display: inline-block;
+        text-align: center;
+        max-width: 201px;
+        margin-bottom: 19px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    /* SECTION SERVICE */
+    
+    /* SECTION PRICES */
+    
+    .prices__container {
+        padding-top: 40px;
+        padding-bottom: 78px;
+    }
+    
+    .prices__heading {
+        margin-left: 13px;
+        font-size: 35px;
+        line-height: 43px;
+    }
+    
+    .accordion {
+        margin-top: 56px;
+    }
+    
+    /* SECTION PRICE */
+    
+    /* SECTION CONTACTS */
 
-.service__container {
-    padding-bottom: 70px;
-}
 
-.service__header {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 35px;
-}
-
-.service__heading {
-    margin-top: 60px;
-    margin-right: 0px;
-    font-size: 35px;
-    line-height: 45px;
-}
-
-.service__buttons {
-    margin-top: 43px;
-}
-
-.cards {
-    justify-content: space-between;
-    row-gap: 38px;
-}
-
-.cards__background {
-    width: 280px;
-}
-
-.cards__background--first {
-    background-image: url(../assets/768px-files/png/service__first--768px.png);
-}
-
-.cards__background--second {
-    background-image: url(../assets/768px-files/png/service__second--768px.png);
-}
-
-.cards__background--third {
-    background-image: url(../assets/768px-files/png/service__third--768px.png);
-}
-
-.cards__background--fourth {
-    background-image: url(../assets/768px-files/png/service__fourth--768px.png);
-}
-
-.cards__background--fifth {
-    background-image: url(../assets/768px-files/png/service__fifth--768px.png);
-}
-
-.cards__background--sixth {
-    background-image: url(../assets/768px-files/png/service__sixth--768px.png);
-}
-
-.cards__heading {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.cards__text {
-    display: inline-block;
-    text-align: center;
-    max-width: 201px;
-    margin-bottom: 19px;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-/* SECTION SERVICE */
-
-/* SECTION PRICES */
-
-.prices__container {
-    padding-top: 40px;
-    padding-bottom: 78px;
-}
-
-.prices__heading {
-    margin-left: 13px;
-    font-size: 35px;
-    line-height: 43px;
-}
-
-.accordion {
-    margin-top: 56px;
-}
-
-/* SECTION PRICE */
-
-/* SECTION CONTACTS */
-
-
-
-/* SECTION CONTATS */
-
-/* FOOTER */
-
-.footer__container {
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-
-.footer__center-side {
-    left: 0px;
-    line-height: 24px;
-}
-
-.footer__right-list {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-}
-
-}
-
-/* MEDIA 768px */
-
-/* MEDIA 660px */
+    
+    /* SECTION CONTATS */
+    
+    /* FOOTER */
+    
+    .footer__container {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .footer__center-side {
+        left: 0px;
+        line-height: 24px;
+    }
+    
+    .footer__right-list {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    }
+    
+    /* MEDIA 768px */
+    
+    /* MEDIA 660px */
 
 @media (max-width:660px) {
 
