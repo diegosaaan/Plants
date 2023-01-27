@@ -31,7 +31,47 @@ menuCloseLinks.forEach(link => link.addEventListener("click", () => {
   menuBurger.classList.remove('burger-active');
 }))
 
-// 
+// ACCORDION
+
+const accordionItem = document.querySelectorAll(".accordion__item");
+const accordionTitle = document.querySelectorAll(".accordion__title");
+const accordionIcon = document.querySelectorAll(".accordion__icon");
+let accordionItemArray;
+let indexOfOpenAccord = null;
+
+const openAccrodion = (index) => {
+  accordionItem[index].classList.add("accordion__item--active");
+  accordionTitle[index].classList.add("accordion__title--active");
+  accordionIcon[index].classList.add("accordion__icon--active");
+}
+
+const closeAccordion = (index) => {
+  accordionItem[index].classList.remove("accordion__item--active");
+  accordionTitle[index].classList.remove("accordion__title--active");
+  accordionIcon[index].classList.remove("accordion__icon--active");
+}
+
+  accordionTitle.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      accordionItemArray = Array.from(accordionItem);
+
+      accordionItemArray.forEach((i, index) => {
+        if(i.classList.contains("accordion__item--active")) {
+          indexOfOpenAccord = index;
+        } 
+      })
+      
+      if (indexOfOpenAccord === null) {
+        openAccrodion(index);
+      } else if (item.classList.contains("accordion__title--active")) {
+        closeAccordion(index);
+      } else if (indexOfOpenAccord !== null && item.classList.contains("accordion__title--active") == false) {
+        closeAccordion(indexOfOpenAccord);
+        openAccrodion(index);
+      }
+  });
+});
+
 
 // SERVICE 
 
@@ -63,35 +103,35 @@ allBtn.forEach(btn => {
 
     if (btnArray.every(btn => btn.classList.contains("btn--active") == false)) {
       allItem.forEach(item => {
-        item.classList.remove("service__item--active")
+        item.classList.remove("service__item--active");
       })};
 
       // Добавлять блюр, если кнопка нажата
 
-      if(btnGardens.classList.contains("btn--active") ) {
-        itemLawn.classList.add("service__item--active")
+      if (btnGardens.classList.contains("btn--active") ) {
+        itemLawn.classList.add("service__item--active");
   
         itemPlanting.forEach(item => {
           item.classList.add("service__item--active")
         });
       };
   
-      if(btnLawn.classList.contains("btn--active")) {
+      if (btnLawn.classList.contains("btn--active")) {
   
         itemPlanting.forEach(item => {
-          item.classList.add("service__item--active")
+          item.classList.add("service__item--active");
         });
   
         itemGardens.forEach(item => {
-          item.classList.add("service__item--active")
+          item.classList.add("service__item--active");
         });
       };
   
-      if(btnPlanting.classList.contains("btn--active") ) {
-        itemLawn.classList.add("service__item--active")
+      if (btnPlanting.classList.contains("btn--active") ) {
+        itemLawn.classList.add("service__item--active");
   
         itemGardens.forEach(item => {
-          item.classList.add("service__item--active")
+          item.classList.add("service__item--active");
         });
       };
 
@@ -99,17 +139,17 @@ allBtn.forEach(btn => {
       
       if (btnGardens.classList.contains("btn--active")) {
         itemGardens.forEach(item => {
-          item.classList.remove("service__item--active")
+          item.classList.remove("service__item--active");
         })
       };
     
       if (btnLawn.classList.contains("btn--active")) {
-        itemLawn.classList.remove("service__item--active")
+        itemLawn.classList.remove("service__item--active");
       };
     
       if (btnPlanting.classList.contains("btn--active")) {
         itemPlanting.forEach(item => {
-          item.classList.remove("service__item--active")
+          item.classList.remove("service__item--active");
         })
       };
   });
