@@ -20,15 +20,9 @@
     /* INTRO */
 
     .plants__intro__container {
-        display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
         padding: 37px 50px 70px 50px;
-    }
-
-    .plants__intro__icon {
-        max-width: 310px;
-        max-height: 260px;
     }
     
     .plants__intro__right-side {
@@ -55,6 +49,10 @@
         line-height: 25px;
     }
 
+    .plants__intro__item--third {
+        justify-content: start;
+    }
+
     /* INTRO */
 
     /* SECTION ABOUTS US */
@@ -64,14 +62,6 @@
         justify-content: space-between;
         flex-direction: column;
         padding: 40px 50px 86px 50px;
-    }
-    
-    .about-us__left-side {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0px;
-        margin-bottom: 70px;
     }
     
     .about-us__heading {
@@ -86,11 +76,6 @@
         max-width: 668px;
         font-size: 20px;
         line-height: 30px;
-    }
-
-    .about-us__right-side {
-        display: flex;
-        justify-content: center;
     }
 
     .about-us__flower {
@@ -109,7 +94,7 @@
 .service__header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .service__heading {
@@ -124,6 +109,7 @@
 }
 
 .cards {
+    justify-content: space-between;
     row-gap: 38px;
 }
 
@@ -184,17 +170,6 @@
     line-height: 43px;
 }
 
-.prices__right-side {
-    margin-top: 63px;
-}
-
-.prices__text {
-    margin-bottom: 28px;
-    max-width: 296px;
-    font-size: 25px;
-    line-height: 35px;
-}
-
 .accordion {
     margin-top: 56px;
 }
@@ -203,31 +178,7 @@
 
 /* SECTION CONTACTS */
 
-.contacts__container {
-    align-items: center;
-    flex-direction: column-reverse;
-}
 
-.contacts__left-side {
-    position: relative;
-    left: 10px;
-    margin-top: 250px;
-    max-width: 200px;
-    max-height: 250px;
-}
-
-.contacts__center-side {
-    order: 1;
-    margin-top: 40px;
-}
-
-.contacts__heading {
-    left: 0px;
-}
-
-.select {
-    margin-top: 97px;
-}
 
 /* SECTION CONTATS */
 
@@ -254,6 +205,229 @@
 
 /* MEDIA 768px */
 
+/* MEDIA 660px */
+
+@media (max-width:660px) {
+
+    /* SECTION PLANTS */
+
+    .plants {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .plants__intro__container {
+        flex-direction: column;
+    }
+
+    .plants__intro__item--third {
+        justify-content: center;
+    }
+    
+    .header {
+        padding: 41px 0 39px 0px;
+    }
+
+    .menu-close {
+        display: block;
+    }
+    
+    .header__container {
+        padding: 0px 25px;
+    }
+
+    .header__logo {
+        position: relative;
+        right: 2px;
+        bottom: 3px;
+    }
+
+    .header__logo__text {
+        font-weight: 400;
+    }
+
+    .header__right-side {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        padding: 15px 30px 15px 30px;
+        width: 100%;
+        height: 100vh;
+        border-bottom: 2px solid #3db432;
+        background-color: #EDF2EC;
+        background-image: url(../assets/380px-files/png/about-us__flower--380px.png);
+        background-repeat: no-repeat;
+        background-position: top calc(100px) left;
+        background-position-x: 25px;
+        -webkit-transition: right .3s ease-in-out;
+        -o-transition: right .3s ease-in-out;
+        transition: right .4s ease-in-out;
+        z-index: 10;
+    }
+
+    .header__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .header__link {
+        font-size: 25px;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        bottom: 7px;
+        width: 40px;
+        height: 26px;
+    }
+    
+    .burger-line {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        background-color: #717171;
+    }
+    
+    .burger-line:first-child {
+        top: 0px;
+        left: 0;
+    }
+    
+    .burger-line:nth-child(2) {
+        top: 37%;
+        left: 0;
+        -webkit-transform: translateY(-37%);
+            -ms-transform: translateY(-37%);
+                transform: translateY(-37%);
+    }
+    .burger-line:nth-child(3) {
+        top: 70%;
+        left: 0;
+        -webkit-transform: translateY(-70%);
+            -ms-transform: translateY(-70%);
+                transform: translateY(-70%);
+    }
+    
+    .burger-line:last-child {
+        bottom: 0;
+        left: 0;
+    }
+
+    .menu-close {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 25px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu-close::before, 
+    .menu-close::after {
+        content: '';
+        position: absolute;
+        margin-left: auto;
+        width: 100%;
+        height: 2px;
+        background-color: #717171;
+    }
+
+    .menu-close::before {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    .menu-close::after {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    }
+
+    .header__right-side.burger-active {
+        right: 0;
+        padding: 15px 30px 15px 30px;
+        width: 100%;
+        height: 100vh;
+        border-bottom: 2px solid #3db432;
+        background-color: #EDF2EC;
+        background-image: url(../assets/380px-files/png/about-us__flower--380px.png);
+        background-repeat: no-repeat;
+        background-position: top calc(100px) left;
+        background-position-x: 25px;
+        -webkit-transition: right .3s ease-in-out;
+        -o-transition: right .3s ease-in-out;
+        transition: right .3s ease-in-out;
+    }
+
+    /* SECTION PLANTS */
+
+    .plants__intro__left-side {
+        display: none;
+    }
+
+    .plants__intro__item--first {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .plants__intro__item--second {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    /* SECTION SERVICE */
+
+    .service__button:first-child {
+        margin-bottom: 8px;
+    }
+
+    .service__button:not(:last-child) {
+        margin-right: 6px;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+
+    /* SECTION SERVICE */
+
+    /* SECTION PRICE */
+
+    .prices__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .prices__left-side {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .prices__right-side {
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .prices__text {
+        text-align: center;
+    }
+
+    /* SECTION PRICE */
+}
+
+/* MEDIA 660px */
+
 /* MEDIA 550px */
 
 @media (max-width:550px) {
@@ -276,16 +450,26 @@
 
 /* SECTION CONTACTS */
 
-.select {
-    min-width: 300px;
+.select,
+.information,
+.contacts__city-choice {
+    width: 300px;
+}
+
+.information {
+    padding: 23px 35px;
+}
+
+.information__right-list {
+    margin-left: 0px;
+}
+
+.information__right-btn {
+    position: relative;
+    right: 25%;
 }
 
 /* SECTION CONTATS */
-
-.prices__container {
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 
 /* SECTION PRICES */
 
@@ -314,3 +498,122 @@
 }
 
 /* MEDIA 550px */
+
+/* MEDIA 440px */
+
+@media (max-width:440px) {
+
+    .heading {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    /* SECTION PLANTS */
+
+    .plants__intro__container {
+        padding-top: 0;
+        padding-bottom: 39px;
+    }
+
+    .plants__intro__right-side {
+        margin-top: 0px;
+    }
+
+    .plants__intro__left-side {
+        display: none;
+    }
+
+    .plants__intro__item--first {
+        margin-top: 15px;
+        margin-bottom: 21px;
+        max-width: 330px;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: start;
+    }
+    
+    .plants__intro__item--second {
+        margin-bottom: 24px;
+        max-width: 315px;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: start;
+    }
+    
+    .plants__intro__button {
+        padding: 5px 16px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .plants__intro__item--first {
+        text-align: start;
+    }
+
+    .plants__intro__item--second {
+        text-align: start;
+    }
+
+    .plants__intro__item--third {
+        display: block;
+    }
+
+    /* SECTION PLANTS */
+
+    /* SECTION ABOUTS US */
+    
+    .abouts-us__container {
+        align-items: center;
+        padding-bottom: 24px;
+    }
+    
+    .about-us__left-side {
+        margin-top: 0px;
+        margin-right: 0;
+        margin-bottom: 3px;
+    }
+    
+    .about-us__heading {
+        margin-bottom: 13px;
+        max-width: 463px;
+    }
+    
+    .about-us__description {
+        max-width: 330px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    /* SECTION ABOUT US */
+
+    /* SECTION SERVICE */
+
+    .service__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .service__button:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .service__button:nth-child(2) {
+        margin-bottom: 6px;
+    }
+
+    /* SECTION SERVICE */
+
+    /* SECTION PRICE */
+
+    .accordion {
+        margin-top: 35px;
+        padding: 29px 22px 29px 22px;
+    }
+
+    /* SECTION PRICE */
+
+}
+
+/* MEDIA 440px */
