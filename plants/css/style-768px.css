@@ -457,7 +457,7 @@
 }
 
 .information {
-    padding: 23px 35px;
+    padding: 23px 30px;
 }
 
 .information__right-list {
@@ -466,7 +466,8 @@
 
 .information__right-btn {
     position: relative;
-    right: 25%;
+    right: 0px;
+    left: 0px;
 }
 
 /* SECTION CONTATS */

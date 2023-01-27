@@ -610,7 +610,7 @@ img {
 }
 
 .contacts__city-choice {
-    position: relative;
+    position: absolute;
     width: 450px;
     max-height: 0;
     padding: 0px 50px 0px 26px;
@@ -826,7 +826,7 @@ img {
 
 /* MEDIA FOR HOVER */
 
-@media (min-width: 769px) {
+@media (hover: hover) {
     
     .plants__intro__button:hover {
         color: #fff;
@@ -841,8 +841,7 @@ img {
         background-color: #E06733;
         transition: 0.3s ease-in;
 }
-    .service__button:hover,
-    .service__button:active {
+    .service__button:hover {
         color: #FFF;
         background-color: #E06733;
         transition: 0.3s ease-in;
