@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 a,
@@ -126,11 +127,6 @@ img {
     scroll-behavior: smooth
 }
 
-.header__link:hover {
-    color: #4f0db9;
-    transition: 0.7s ease-in-out;
-}
-
 .header__link::after {
     content: "";
     display: block;
@@ -141,18 +137,6 @@ img {
     height: 2px; 
     background-color: black; 
     transition:  0.5s; 
-}
-
-.header__link:hover::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    height: 2px; 
-    width: 100%;
-    background-color: rgb(61, 50, 214); 
-    transition:  0.5s;  
 }
 
 .header__link--home {
@@ -211,12 +195,6 @@ img {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 20px;
-    transition: 0.3s ease-in-out;
-}
-
-.plants__intro__button:hover {
-    color: #fff;
-    background-color: #E06733;
     transition: 0.3s ease-in-out;
 }
 
@@ -294,13 +272,6 @@ img {
 }
 
 .btn--active {
-    color: #FFF;
-    background-color: #E06733;
-    transition: 0.3s ease-in;
-}
-
-.service__button:hover,
-.service__button:active {
     color: #FFF;
     background-color: #E06733;
     transition: 0.3s ease-in;
@@ -442,14 +413,6 @@ img {
     transition: 0.3s ease-in;
 }
 
-.prices__button:hover,
-.prices__button:focus,
-.prices__button:active {
-    color: #FFF;
-    background-color: #E06733;
-    transition: 0.3s ease-in;
-}
-
 .prices__background {
     display: block;
     margin-right: -8px;
@@ -495,17 +458,12 @@ img {
     font-weight: 700;
     background-color: #EDF2EC;
     z-index: 10;
+    outline: none;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
 .accordion__title--active {
-    background-color: #D6E7D2;
-    transition: 0.3s ease-in-out;
-}
-
-.accordion__title:hover,
-.accordion__title:active {
     background-color: #D6E7D2;
     transition: 0.3s ease-in-out;
 }
@@ -624,6 +582,7 @@ img {
     letter-spacing: 1px;
     color: #717171;
     background-color:#D6E7D2;
+    outline: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease-in;
     cursor: pointer;
@@ -631,7 +590,7 @@ img {
 }
 
 .contacts__city-choice {
-    position: relative;
+    position: absolute;
     width: 450px;
     max-height: 0;
     padding: 0px 50px 0px 26px;
@@ -670,12 +629,6 @@ img {
     font-weight: 400;
     color: #499A18;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.contacts__item:hover {
-    border-bottom: 1px solid #717171;
-    color: #717171;
     transition: 0.3s ease-in-out;
 }
 
@@ -843,5 +796,87 @@ img {
 
 .footer__right-link--unknown {
     background-image: url(../assets/svg/footer__unknown.svg);
+}
+
+/* MEDIA FOR HOVER */
+
+@media (hover: hover) {
+
+    .header__link:hover,
+    .header__link:focus,
+    .header__link:active {
+        color: #4f0db9;
+        transition: 0.7s ease-in-out;
+    }
+    
+    .header__link:hover::after,
+    .header__link:focus::after,
+    .header__link:active::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 2px; 
+        width: 100%;
+        background-color: rgb(61, 50, 214); 
+        transition:  0.5s;  
+    }
+    
+    .plants__intro__button:hover,
+    .plants__intro__button:focus,
+    .plants__intro__button:hover:active {
+        color: #fff;
+        background-color: #E06733;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .prices__button:hover,
+    .prices__button:focus,
+    .prices__button:active {
+        color: #FFF;
+        background-color: #E06733;
+        transition: 0.3s ease-in;
+    }
+
+    .service__button:hover,
+    .service__button:active {
+        color: #FFF;
+        background-color: #E06733;
+        transition: 0.3s ease-in;
+    }
+
+    .service__button:focus {
+        outline: 1px solid #E06733;
+    }
+    
+    .accordion__title:hover,
+    .accordion__title:focus,
+    .accordion__title:active {
+        background-color: #D6E7D2;
+        transition: 0.3s ease-in-out;
+    }
+
+    .contacts__item:hover,
+    .contacts__item:focus,
+    .contacts__item:active {
+        border-bottom: 1px solid #717171;
+        color: #717171;
+        transition: 0.3s ease-in-out;
+    }
+
+    .information__right-link:hover,
+    .information__right-link:focus,
+    .information__right-link:active {
+        background-color: #E06733;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+    }
+
+    .footer__item--scale:hover,
+    .footer__item--scale:focus,
+    .footer__item--scale:active {
+        transform: scale(1.2);
+    }
 }
 
