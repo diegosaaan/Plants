@@ -243,7 +243,7 @@ const choisefunctional = (item) => {
 				informationTel.textContent = obj.tel;
 				informationAdress.textContent = obj.adress;
         informationTelLink.addEventListener('click', () => {
-          window.location.href = 'tel:' + informationTelLink;
+          informationTelLink.href = 'tel:' + informationTel.textContent;
         })}
 		});
 }
