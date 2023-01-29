@@ -457,7 +457,7 @@
 }
 
 .information {
-    padding: 23px 30px;
+    padding: 23px 32px;
 }
 
 .information__right-list {
@@ -609,7 +609,7 @@
 
     .accordion {
         margin-top: 35px;
-        padding: 29px 17px 29px 17px;
+        padding: 29px 21px 29px 21px;
     }
 
     /* SECTION PRICE */
