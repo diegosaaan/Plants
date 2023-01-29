@@ -1,9 +1,13 @@
-console.log(" Самооценка - 100 баллов\n\n1. При нажатии на кнопки:Gargens,Lawn,Planting происходит смена фокуса на услугах в разделе service +50\n2.Accordion в секции prices реализация 3-х выпадающих списков об услугах и ценах + 50\n3.В разделе contacts реализован select с выбором городов +25")
+// console.log(" Самооценка - 100 баллов\n\n1. При нажатии на кнопки:Gargens,Lawn,Planting происходит смена фокуса на услугах в разделе service +50\n2.Accordion в секции prices реализация 3-х выпадающих списков об услугах и ценах + 50\n3.В разделе contacts реализован select с выбором городов +25")
 
-localStorage.setItem("greeted", true);
+// localStorage.setItem("greeted", true);
 
-if (localStorage.getItem("greeted") !== true)
-  alert("Работа была выполнена в публичном репозитории, так как мне недоступен приватный репозиторий (политика GitHub).\n\nПожалуйста, оценивайте работу в соответсвии с критериями оценивания:\n\nhttps://github.com/rolling-scopes-school/tasks/blob/master/tasks/plants/plants-part3.md.\n\nНе забудьте, что при нахождении недочетов, баллы необходимо отнимать от 125, а не 100, и помните, что за неадекватное оценивание Вам дадут предупреждение.\n\nМой дискорд для связи:\nLoveeey-doveeey#9100.")
+// if (localStorage.getItem("greeted") !== true)
+//   alert("Работа была выполнена в публичном репозитории, так как мне недоступен приватный репозиторий (политика GitHub).\n\nПожалуйста, оценивайте работу в соответсвии с критериями оценивания:\n\nhttps://github.com/rolling-scopes-school/tasks/blob/master/tasks/plants/plants-part3.md.\n\nНе забудьте, что при нахождении недочетов, баллы необходимо отнимать от 125, а не 100, и помните, что за неадекватное оценивание Вам дадут предупреждение.\n\nМой дискорд для связи:\nLoveeey-doveeey#9100.")
+
+window.onkeydown = function(e) {
+  return e.keyCode !== 32;
+};
 
   // Бургер
 
@@ -51,9 +55,8 @@ const closeAccordion = (index) => {
   accordionIcon[index].classList.remove("accordion__icon--active");
 }
 
-  accordionTitle.forEach((item, index) => {
-    item.addEventListener("click", () => {
-      accordionItemArray = Array.from(accordionItem);
+const accordionfunctional = (item, index) => {
+  accordionItemArray = Array.from(accordionItem);
 
       accordionItemArray.forEach((i, index) => {
         if(i.classList.contains("accordion__item--active")) {
@@ -69,6 +72,19 @@ const closeAccordion = (index) => {
         closeAccordion(indexOfOpenAccord);
         openAccrodion(index);
       }
+}
+
+accordionItem.forEach((item, index) => {
+  item.addEventListener("keydown", (e) => {
+    if (e.keyCode == 32) {
+      accordionfunctional(item, index);
+    }
+  });
+});
+
+  accordionTitle.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      accordionfunctional(item, index);
   });
 });
 
@@ -198,20 +214,17 @@ const selectInformation = [
 	}
 ]
 
-select.addEventListener('click', () => {
-
-  // Ивенты для Select
+const toogleSelect = () => {
   iconSelect.classList.toggle("select__icon--clicked");
   choiceSelect.classList.toggle("contacts__city-choice--active");
   select.classList.toggle("select--shadow");
-});
+}
 
-choiceItems.forEach(item => {
-  item.addEventListener("click",() => {
+const choisefunctional = (item) => {
+  
+  // Удаление изображения contacts__photo при ширине селекта 300px (380px адаптив)
 
-    // Удаление изображения contacts__photo при ширине селекта 300px (380px адаптив)
-
-    if (screenWidth <= 380) contactsPhoto.style = "visibility: hidden";
+  if (screenWidth <= 380) contactsPhoto.style = "visibility: hidden";
 
     // Ивенты для Select
     titleSelectText.textContent = item.textContent;
@@ -233,6 +246,27 @@ choiceItems.forEach(item => {
           window.location.href = 'tel:' + informationTelLink;
         })}
 		});
+}
+
+select.addEventListener('click', () => {
+  toogleSelect()
+});
+
+select.addEventListener("keydown", (e) => {
+  if (e.keyCode == 32) {
+    toogleSelect()
+  }
+});
+
+choiceItems.forEach(item => {
+  item.addEventListener("click", () => {
+    choisefunctional(item);
+  });
+  
+  item.addEventListener("keydown", (e) => {
+    if (e.keyCode == 32) {
+      choisefunctional(item);
+    }
   });
 });
   
