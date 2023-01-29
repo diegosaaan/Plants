@@ -1,9 +1,9 @@
-// console.log(" Самооценка - 100 баллов\n\n1. При нажатии на кнопки:Gargens,Lawn,Planting происходит смена фокуса на услугах в разделе service +50\n2.Accordion в секции prices реализация 3-х выпадающих списков об услугах и ценах + 50\n3.В разделе contacts реализован select с выбором городов +25")
+console.log(" Самооценка - 100 баллов\n\n1. При нажатии на кнопки:Gargens,Lawn,Planting происходит смена фокуса на услугах в разделе service +50\n2.Accordion в секции prices реализация 3-х выпадающих списков об услугах и ценах + 50\n3.В разделе contacts реализован select с выбором городов +25")
 
-// localStorage.setItem("greeted", true);
+localStorage.setItem("greeted", true);
 
-// if (localStorage.getItem("greeted") !== true)
-//   alert("Работа была выполнена в публичном репозитории, так как мне недоступен приватный репозиторий (политика GitHub).\n\nПожалуйста, оценивайте работу в соответсвии с критериями оценивания:\n\nhttps://github.com/rolling-scopes-school/tasks/blob/master/tasks/plants/plants-part3.md.\n\nНе забудьте, что при нахождении недочетов, баллы необходимо отнимать от 125, а не 100, и помните, что за неадекватное оценивание Вам дадут предупреждение.\n\nМой дискорд для связи:\nLoveeey-doveeey#9100.")
+if (localStorage.getItem("greeted") !== true)
+  alert("Работа была выполнена в публичном репозитории, так как мне недоступен приватный репозиторий (политика GitHub).\n\nПожалуйста, оценивайте работу в соответсвии с критериями оценивания:\n\nhttps://github.com/rolling-scopes-school/tasks/blob/master/tasks/plants/plants-part3.md.\n\nНе забудьте, что при нахождении недочетов, баллы необходимо отнимать от 125, а не 100, и помните, что за неадекватное оценивание Вам дадут предупреждение.\n\nМой дискорд для связи:\nLoveeey-doveeey#9100.")
 
 window.onkeydown = function(e) {
   return e.keyCode !== 32;
