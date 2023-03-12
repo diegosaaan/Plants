@@ -1,0 +1,226 @@
+/* MEDIA 380xp */
+
+@media (max-width:380px) {
+
+    .container {
+        padding: 0px 25px;
+        max-width: 380px;
+    }
+    
+    /* RESET STYLE */
+    
+    /* SECTION PLANTS */
+    
+    /* INTRO */
+
+    .plants__intro__container {
+        padding-bottom: 25px;
+    }
+    
+    
+    /* INTRO */
+    
+    /* SECTION PLANTS */
+    
+    /* SECTION ABOUTS US */
+    
+    .abouts-us__container {
+        padding: 30px 25px 24px 25px;
+    }
+    
+    /* SECTION ABOUT US */
+    
+    /* SECTION SERVICE */
+    
+    .service__container {
+        padding-bottom: 27px;
+    }
+    
+    .service__header {
+        margin-bottom: 40px;
+    }
+    
+    .service__heading {
+        margin-top: 32px;
+        max-width: 187px;
+    }
+    
+    .service__buttons {
+        display: block;
+        margin-top: 37px;
+    }
+    
+    .service__button {
+        margin-bottom: 0px;
+        padding: 7px 30px 7px 30px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .service__button--lawn {
+        padding: 7px 40px;
+    }
+
+    .service__button:first-child {
+        margin-bottom: 8px;
+    }
+    
+    .service__button:not(:last-child) {
+        margin-right: 6px;
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 34px;
+    }
+    
+    .cards__background {
+        max-width: 280px;
+        max-height: 350px;
+    }
+    
+    .cards__item {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .cards__item--fifth {
+        margin-bottom: 3px;
+    }
+    
+    
+    .cards__text {
+        margin-bottom: 18px;
+    }
+    
+    /* SECTION SERVICE */
+    
+    /* SECTION PRICES */
+    
+    .prices__container {
+        padding-top: 26px;
+        padding-bottom: 40px;
+    }
+    
+    .prices__heading {
+        margin-left: 0;
+        font-size: 25px;
+        line-height: 32px;
+    }
+    
+    .prices__text {
+        margin-bottom: 20px;
+        max-width: 230px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .prices__right-side {
+        margin-top: 19px;
+        min-height: 0px;
+    }
+    
+    .prices__button {
+        margin-bottom: 0px;
+        padding: 7px 24px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .prices__background {
+        display: none;
+    }
+    
+    .accordion {
+        margin-top: 35px;
+        padding: 29px 22px 29px 22px;
+        max-width: 224px;
+    }
+    
+    .accordion__item:not(:last-child) {
+        margin-bottom: 13px;
+    }
+    
+    .accordion__title {
+        min-width: 180px;
+        padding: 15px 40px 15px 30px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .accordion__description {
+        padding: 0px 40px 0px 30px;
+        min-width: 180px;
+    }
+    
+    
+    /* SECTION PRICE */
+    
+    /* SECTION CONTACTS */
+
+    .contacts__left-side {
+        left: -2px;
+        margin-top: 132px;
+        max-height: 124px;
+    }
+    
+    .contacts__center-side {
+        margin-top: 25px;
+        right: 5px;
+    }
+
+    .contacts__heading {
+        left: -3px;
+    }
+
+    .select {
+        margin-top: 42px;
+    }
+
+    .information {
+        top: 105px;
+    }
+    
+    /* SECTION CONTATS */
+    
+    /* FOOTER */
+    
+    .footer__container {
+        padding-top: 10px;
+    }
+
+    .footer__center-side {
+        top: 2px;
+        left: -2px;
+    }
+
+    .footer__right-list {
+        margin-top: 15px;
+    }
+}
+
+/* MEDIA 380px */
+
+
+/* MEDIA 350px */
+
+@media (max-width:350px) {
+
+    .select,
+    .information,
+    .contacts__city-choice {
+        width: 280px;
+    }
+    
+    .information {
+        padding: 23px 25px;
+    }
+
+    
+
+}

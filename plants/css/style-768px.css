@@ -1,0 +1,619 @@
+/* MEDIA 768px */
+
+@media (max-width:768px) {
+    .container {
+        padding: 0px 50px;
+        max-width: 768px;
+    }
+    
+    /* HEADER */
+    
+    .header {
+        flex-wrap: wrap;
+        padding-top: 35px;
+        max-height: 120px;
+    }
+    
+    /* HEADER */
+    
+    /* INTRO */
+    
+    .plants__intro__container {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 37px 50px 70px 50px;
+    }
+    
+    .plants__intro__right-side {
+        margin-top: 0px;
+    }
+    
+    .plants__intro__item--first {
+        margin-bottom: 30px;
+        max-width: 341px;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    .plants__intro__word {
+        color:  #499A18;
+    }
+    
+    .plants__intro__item--second {
+        position: relative;
+        left: 5px;
+        margin-bottom: 35px;
+        max-width: 341px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .plants__intro__item--third {
+        justify-content: start;
+    }
+    
+    /* INTRO */
+    
+    /* SECTION ABOUTS US */
+    
+    .abouts-us__container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 40px 50px 86px 50px;
+    }
+    
+    .about-us__heading {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 52px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    
+    .about-us__description {
+        max-width: 668px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .about-us__flower {
+        max-width: 250px;
+        max-height: 258px;
+    }
+    
+    /* SECTION ABOUTS US */
+    
+    /* SECTION SERVICE */
+    
+    
+    .service__container {
+        padding-bottom: 70px;
+    }
+    
+    .service__header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+    
+    .service__heading {
+        margin-top: 60px;
+        margin-right: 0px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    
+    .service__buttons {
+        margin-top: 43px;
+    }
+    
+    .cards {
+        justify-content: space-between;
+        row-gap: 38px;
+    }
+    
+    .cards__background {
+        width: 280px;
+    }
+    
+    .cards__background--first {
+        background-image: url(../assets/768px-files/png/service__first--768px.png);
+    }
+    
+    .cards__background--second {
+        background-image: url(../assets/768px-files/png/service__second--768px.png);
+    }
+    
+    .cards__background--third {
+        background-image: url(../assets/768px-files/png/service__third--768px.png);
+    }
+    
+    .cards__background--fourth {
+        background-image: url(../assets/768px-files/png/service__fourth--768px.png);
+    }
+    
+    .cards__background--fifth {
+        background-image: url(../assets/768px-files/png/service__fifth--768px.png);
+    }
+    
+    .cards__background--sixth {
+        background-image: url(../assets/768px-files/png/service__sixth--768px.png);
+    }
+    
+    .cards__heading {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .cards__text {
+        display: inline-block;
+        text-align: center;
+        max-width: 201px;
+        margin-bottom: 19px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    /* SECTION SERVICE */
+    
+    /* SECTION PRICES */
+    
+    .prices__container {
+        padding-top: 40px;
+        padding-bottom: 78px;
+    }
+    
+    .prices__heading {
+        margin-left: 13px;
+        font-size: 35px;
+        line-height: 43px;
+    }
+    
+    .accordion {
+        margin-top: 56px;
+    }
+    
+    /* SECTION PRICE */
+    
+    /* SECTION CONTACTS */
+
+
+    
+    /* SECTION CONTATS */
+    
+    /* FOOTER */
+    
+    .footer__container {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .footer__center-side {
+        left: 0px;
+        line-height: 24px;
+    }
+    
+    .footer__right-list {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    }
+    
+    /* MEDIA 768px */
+    
+    /* MEDIA 660px */
+
+@media (max-width:660px) {
+
+    /* SECTION PLANTS */
+
+    .plants {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .plants__intro__container {
+        flex-direction: column;
+    }
+
+    .plants__intro__item--third {
+        justify-content: center;
+    }
+    
+    .header {
+        padding: 41px 0 39px 0px;
+    }
+
+    .menu-close {
+        display: block;
+    }
+    
+    .header__container {
+        padding: 0px 25px;
+    }
+
+    .header__logo {
+        position: relative;
+        right: 2px;
+        bottom: 3px;
+    }
+
+    .header__logo__text {
+        font-weight: 400;
+    }
+
+    .header__right-side {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        padding: 15px 30px 15px 30px;
+        width: 100%;
+        height: 100vh;
+        border-bottom: 2px solid #3db432;
+        background-color: #EDF2EC;
+        background-image: url(../assets/380px-files/png/about-us__flower--380px.png);
+        background-repeat: no-repeat;
+        background-position: top calc(100px) left;
+        background-position-x: 25px;
+        -webkit-transition: right .3s ease-in-out;
+        -o-transition: right .3s ease-in-out;
+        transition: right .4s ease-in-out;
+        z-index: 10;
+    }
+
+    .header__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .header__link {
+        font-size: 25px;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        bottom: 7px;
+        width: 40px;
+        height: 26px;
+    }
+    
+    .burger-line {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 2.5px;
+        background-color: #717171;
+    }
+    
+    .burger-line:first-child {
+        top: 0px;
+        left: 0;
+    }
+    
+    .burger-line:nth-child(2) {
+        top: 37%;
+        left: 0;
+        -webkit-transform: translateY(-37%);
+            -ms-transform: translateY(-37%);
+                transform: translateY(-37%);
+    }
+    .burger-line:nth-child(3) {
+        top: 70%;
+        left: 0;
+        -webkit-transform: translateY(-70%);
+            -ms-transform: translateY(-70%);
+                transform: translateY(-70%);
+    }
+    
+    .burger-line:last-child {
+        bottom: 0;
+        left: 0;
+    }
+
+    .menu-close {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 25px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu-close::before, 
+    .menu-close::after {
+        content: '';
+        position: absolute;
+        margin-left: auto;
+        width: 100%;
+        height: 2px;
+        background-color: #717171;
+    }
+
+    .menu-close::before {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+
+    .menu-close::after {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    }
+
+    .header__right-side.burger-active {
+        right: 0;
+        padding: 15px 30px 15px 30px;
+        width: 100%;
+        height: 100vh;
+        border-bottom: 2px solid #3db432;
+        background-color: #EDF2EC;
+        background-image: url(../assets/380px-files/png/about-us__flower--380px.png);
+        background-repeat: no-repeat;
+        background-position: top calc(100px) left;
+        background-position-x: 25px;
+        -webkit-transition: right .3s ease-in-out;
+        -o-transition: right .3s ease-in-out;
+        transition: right .3s ease-in-out;
+    }
+
+    /* SECTION PLANTS */
+
+    .plants__intro__left-side {
+        display: none;
+    }
+
+    .plants__intro__item--first {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .plants__intro__item--second {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    /* SECTION SERVICE */
+
+    .service__button:first-child {
+        margin-bottom: 8px;
+    }
+
+    .service__button:not(:last-child) {
+        margin-right: 6px;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+
+    /* SECTION SERVICE */
+
+    /* SECTION PRICE */
+
+    .prices__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .prices__left-side {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .prices__right-side {
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .prices__text {
+        text-align: center;
+    }
+
+    /* SECTION PRICE */
+}
+
+/* MEDIA 660px */
+
+/* MEDIA 550px */
+
+@media (max-width:550px) {
+
+/* SECTION PLANTS */
+
+.header__list {
+    flex-wrap: wrap;
+}
+
+.plants__intro__container {
+    flex-direction: column-reverse;
+}
+
+.plants__intro__item--second {
+    left: 0px;
+}
+
+/* SECTION PLANTS */
+
+/* SECTION CONTACTS */
+
+.select,
+.information,
+.contacts__city-choice {
+    width: 300px;
+}
+
+.information {
+    padding: 23px 32px;
+}
+
+.information__right-list {
+    margin-left: 0px;
+}
+
+.information__right-btn {
+    display: flex;
+    align-items: center;
+}
+
+/* SECTION CONTATS */
+
+/* SECTION PRICES */
+
+.prices__left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion__label {
+    min-width: 180px;
+}
+
+.prices__right-side {
+    align-items: center;
+    justify-content: center;
+}
+
+.prices__text {
+    text-align: center;
+}
+
+/* SECTION PRICES */
+
+}
+
+/* MEDIA 550px */
+
+/* MEDIA 440px */
+
+@media (max-width:440px) {
+
+    .heading {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    /* SECTION PLANTS */
+
+    .plants__intro__container {
+        padding-top: 0;
+        padding-bottom: 39px;
+    }
+
+    .plants__intro__right-side {
+        margin-top: 0px;
+    }
+
+    .plants__intro__left-side {
+        display: none;
+    }
+
+    .plants__intro__item--first {
+        margin-top: 15px;
+        margin-bottom: 21px;
+        max-width: 330px;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: start;
+    }
+    
+    .plants__intro__item--second {
+        margin-bottom: 24px;
+        max-width: 315px;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: start;
+    }
+    
+    .plants__intro__button {
+        padding: 5px 16px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .plants__intro__item--first {
+        text-align: start;
+    }
+
+    .plants__intro__item--second {
+        text-align: start;
+    }
+
+    .plants__intro__item--third {
+        display: block;
+    }
+
+    /* SECTION PLANTS */
+
+    /* SECTION ABOUTS US */
+    
+    .abouts-us__container {
+        align-items: center;
+        padding-bottom: 24px;
+    }
+    
+    .about-us__left-side {
+        margin-top: 0px;
+        margin-right: 0;
+        margin-bottom: 3px;
+    }
+    
+    .about-us__heading {
+        margin-bottom: 13px;
+        max-width: 463px;
+    }
+    
+    .about-us__description {
+        max-width: 330px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    /* SECTION ABOUT US */
+
+    /* SECTION SERVICE */
+
+    .service__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .service__button:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .service__button:nth-child(2) {
+        margin-bottom: 6px;
+    }
+
+    /* SECTION SERVICE */
+
+    /* SECTION PRICE */
+
+    .accordion {
+        margin-top: 35px;
+        padding: 29px 21px 29px 21px;
+    }
+
+    /* SECTION PRICE */
+
+}
+
+/* MEDIA 440px */
